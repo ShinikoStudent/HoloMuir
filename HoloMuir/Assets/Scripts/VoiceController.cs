@@ -21,7 +21,9 @@ public class VoiceController : MonoBehaviour
         soundSource = GetComponent<AudioSource>();
         
         //Voice commands for playing sound
-        keyActs.Add("Hello box box", Talk);
+        keyActs.Add("Hello box box", HelloResponse);
+        keyActs.Add("What is your favorite childhood memory?", ChildhoodResponse);
+        keyActs.Add("Tell me something else", SomethingResponse);
 
         recognizer = new KeywordRecognizer(keyActs.Keys.ToArray());
         recognizer.OnPhraseRecognized += OnKeywordsRecognized;
@@ -33,10 +35,19 @@ public class VoiceController : MonoBehaviour
         keyActs[args.text].Invoke();
     }   
 
-    void Talk(){
-	    soundSource.clip = sounds[UnityEngine.Random.Range(0, sounds.Length)];
+    void HelloResponse(){
+	    soundSource.clip = sounds[0];
 	    soundSource.Play();
     }
+    void ChildhoodResponse(){
+	    soundSource.clip = sounds[1];
+	    soundSource.Play();
+    }
+    void SomethingResponse(){
+	    soundSource.clip = sounds[2];
+	    soundSource.Play();
+    }
+
     // Update is called once per frame
     void Update()
     {
