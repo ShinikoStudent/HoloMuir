@@ -1196,6 +1196,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 100290, guid: 08a50fd326032a24e90e0c0f289abd87, type: 3}
+      propertyPath: m_Name
+      value: Muir
+      objectReference: {fileID: 0}
     - target: {fileID: 9500000, guid: 08a50fd326032a24e90e0c0f289abd87, type: 3}
       propertyPath: m_Controller
       value: 
@@ -1256,9 +1260,41 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 10
       objectReference: {fileID: 0}
-    - target: {fileID: 100290, guid: 08a50fd326032a24e90e0c0f289abd87, type: 3}
-      propertyPath: m_Name
-      value: Muir
+    - target: {fileID: 13700002, guid: 08a50fd326032a24e90e0c0f289abd87, type: 3}
+      propertyPath: m_BlendShapeWeights.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 13700002, guid: 08a50fd326032a24e90e0c0f289abd87, type: 3}
+      propertyPath: m_BlendShapeWeights.Array.data[0]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 13700002, guid: 08a50fd326032a24e90e0c0f289abd87, type: 3}
+      propertyPath: m_BlendShapeWeights.Array.data[1]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 13700002, guid: 08a50fd326032a24e90e0c0f289abd87, type: 3}
+      propertyPath: m_BlendShapeWeights.Array.data[2]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 13700002, guid: 08a50fd326032a24e90e0c0f289abd87, type: 3}
+      propertyPath: m_BlendShapeWeights.Array.data[3]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 13700002, guid: 08a50fd326032a24e90e0c0f289abd87, type: 3}
+      propertyPath: m_BlendShapeWeights.Array.data[4]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 13700002, guid: 08a50fd326032a24e90e0c0f289abd87, type: 3}
+      propertyPath: m_BlendShapeWeights.Array.data[5]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 13700002, guid: 08a50fd326032a24e90e0c0f289abd87, type: 3}
+      propertyPath: m_BlendShapeWeights.Array.data[6]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 13700002, guid: 08a50fd326032a24e90e0c0f289abd87, type: 3}
+      propertyPath: m_BlendShapeWeights.Array.data[7]
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08a50fd326032a24e90e0c0f289abd87, type: 3}
