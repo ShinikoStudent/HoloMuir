@@ -7,6 +7,8 @@ using UnityEngine.Windows.Speech;
 
 public class VoiceController : MonoBehaviour
 {
+    public FaceAnimation MuirAnim;
+
     // Voice command vars
     private Dictionary<string, Action> keyActs = new Dictionary<string, Action>();
     private KeywordRecognizer recognizer;
@@ -38,14 +40,18 @@ public class VoiceController : MonoBehaviour
     void HelloResponse(){
 	    soundSource.clip = sounds[0];
 	    soundSource.Play();
+        MuirAnim.Talking();
+        
     }
     void ChildhoodResponse(){
 	    soundSource.clip = sounds[1];
 	    soundSource.Play();
+        MuirAnim.Talking();
     }
     void SomethingResponse(){
 	    soundSource.clip = sounds[2];
 	    soundSource.Play();
+        MuirAnim.Talking();
     }
 
     // Update is called once per frame
