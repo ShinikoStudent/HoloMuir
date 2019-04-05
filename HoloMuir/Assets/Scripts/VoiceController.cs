@@ -57,6 +57,8 @@ public class VoiceController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (!soundSource.isPlaying){
+            MuirAnim.NotTalking();
+        }
     }
 }
