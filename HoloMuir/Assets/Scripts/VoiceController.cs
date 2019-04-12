@@ -23,9 +23,11 @@ public class VoiceController : MonoBehaviour
         soundSource = GetComponent<AudioSource>();
         
         //Voice commands for playing sound
-        keyActs.Add("Hello box box", HelloResponse);
-        keyActs.Add("What is your favorite childhood memory?", ChildhoodResponse);
-        keyActs.Add("Tell me something else", SomethingResponse);
+        keyActs.Add("Goodbye John Muir", ByeResponse);
+        keyActs.Add("Who’s job is it to protect places like Yosemite?", ProtectYosemiteResponse);
+        keyActs.Add("Do you think Yosemite is one of a kind?", UniqueResponse);
+        keyActs.Add("How can we help stop mass deforestation?", PreservationForestResponse);
+        keyActs.Add("How can get more support for forest preservation?", PreservationForestResponse);
 
         recognizer = new KeywordRecognizer(keyActs.Keys.ToArray());
         recognizer.OnPhraseRecognized += OnKeywordsRecognized;
@@ -37,19 +39,24 @@ public class VoiceController : MonoBehaviour
         keyActs[args.text].Invoke();
     }   
 
-    void HelloResponse(){
+    void ByeResponse(){
 	    soundSource.clip = sounds[0];
 	    soundSource.Play();
         MuirAnim.Talking();
         
     }
-    void ChildhoodResponse(){
+    void ProtectYosemiteResponse(){
 	    soundSource.clip = sounds[1];
 	    soundSource.Play();
         MuirAnim.Talking();
     }
-    void SomethingResponse(){
+    void UniqueResponse(){
 	    soundSource.clip = sounds[2];
+	    soundSource.Play();
+        MuirAnim.Talking();
+    }
+    void PreservationForestResponse(){
+	    soundSource.clip = sounds[3];
 	    soundSource.Play();
         MuirAnim.Talking();
     }

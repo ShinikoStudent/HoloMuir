@@ -288,9 +288,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MuirAnim: {fileID: 399919069}
   sounds:
-  - {fileID: 8300000, guid: 75cc19a54285d0843b3db64dee7734d2, type: 3}
-  - {fileID: 8300000, guid: a4751d43c542867409f50b26114ca8e3, type: 3}
-  - {fileID: 8300000, guid: 7a4cf111c2e720441bec708c10f3446d, type: 3}
+  - {fileID: 8300000, guid: fdef2694a3fc9ee439d68781700b0dae, type: 3}
+  - {fileID: 8300000, guid: 03439daf9bfa62f45a7b6d0c5d4b81dd, type: 3}
+  - {fileID: 8300000, guid: a3c1f70ec120525429f1e170c2e8d578, type: 3}
+  - {fileID: 8300000, guid: 1fd47f80eeeb91c44aa3ee7aebff87c8, type: 3}
 --- !u!82 &75545870
 AudioSource:
   m_ObjectHideFlags: 0
