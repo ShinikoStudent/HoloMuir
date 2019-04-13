@@ -27,7 +27,7 @@ public class VoiceController : MonoBehaviour
         keyActs.Add("Who’s job is it to protect places like Yosemite?", ProtectYosemiteResponse);
         keyActs.Add("Do you think Yosemite is one of a kind?", UniqueResponse);
         keyActs.Add("How can we help stop mass deforestation?", PreservationForestResponse);
-        keyActs.Add("How can get more support for forest preservation?", PreservationForestResponse);
+        keyActs.Add("How can we get more support for forest preservation?", PreservationForestResponse);
 
         recognizer = new KeywordRecognizer(keyActs.Keys.ToArray());
         recognizer.OnPhraseRecognized += OnKeywordsRecognized;
