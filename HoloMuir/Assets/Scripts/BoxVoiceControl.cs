@@ -48,7 +48,7 @@ public class BoxVoiceControl : MonoBehaviour
     }   
 
     void playClip(){
-        video.GetComponent<VideoController>().PlayVideo();
+        
     }
     
     void Talk(){
